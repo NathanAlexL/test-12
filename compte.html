@@ -1,0 +1,29 @@
+<!-- Section Créer un compte -->
+<section id="signup">
+    <div class="container">
+        <h2>Créer un compte</h2>
+        <form action="signup.php" method="POST" onsubmit="return checkSignup()">
+            <label for="new-username">Nom d'utilisateur :</label>
+            <input type="text" id="new-username" name="new-username" required>
+            <p id="signup-error" class="error"></p> <!-- Affichage du message d'erreur -->
+            <label for="new-password">Mot de passe :</label>
+            <input type="password" id="new-password" name="new-password" required>
+            <button type="submit">Créer un compte</button>
+        </form>
+    </div>
+</section>
+
+<!-- Section Se connecter -->
+<section id="login">
+    <div class="container">
+        <h2>Connexion</h2>
+        <form action="login.php" method="POST" onsubmit="return checkLogin()">
+            <label for="username">Nom d'utilisateur :</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Mot de passe :</label>
+            <input type="password" id="password" name="password" required>
+            <p id="login-error" class="error"></p> <!-- Affichage du message d'erreur -->
+            <button type="submit">Se connecter</button>
+        </form>
+    </div>
+</section>
