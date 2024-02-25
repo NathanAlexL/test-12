@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'accueil - Educours</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Ajout de Google Fonts pour Playfair Display et Roboto -->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Educours</h1>
+            <nav>
+                <ul>
+                    <li><a href="#login">Se connecter</a></li>
+                    <li><a href="#signup">Créer un compte</a></li>
+                    <li><a href="#features">Fonctionnalités</a></li> <!-- Nouvelle section Fonctionnalités -->
+                    <li><a href="#contact">Contact</a></li> <!-- Nouvelle section Contact -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="login">
+            <div class="container">
+                <h2>Connexion</h2>
+                <form action="login.php" method="POST" onsubmit="return checkLogin()">
+                    <label for="username">Nom d'utilisateur :</label>
+                    <input type="text" id="username" name="username" required>
+
+                    <label for="password">Mot de passe :</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <button type="submit">Se connecter</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="signup">
+            <div class="container">
+                <h2>Créer un compte</h2>
+                <form action="signup.php" method="POST" onsubmit="return checkSignup()">
+                    <label for="new-username">Nom d'utilisateur :</label>
+                    <input type="text" id="new-username" name="new-username" required>
+
+                    <label for="new-password">Mot de passe :</label>
+                    <input type="password" id="new-password" name="new-password" required>
+
+                    <label for="confirm-password">Confirmer le mot de passe :</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+
+                    <button type="submit">Créer un compte</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="features"> <!-- Nouvelle section Fonctionnalités -->
+            <div class="container">
+                <h2>Fonctionnalités</h2>
+                <p>Découvrez les fonctionnalités incroyables que nous offrons pour vous aider dans votre apprentissage !</p>
+                <!-- Ajoutez ici des éléments supplémentaires pour décrire les fonctionnalités -->
+            </div>
+        </section>
+
+        <section id="contact"> <!-- Nouvelle section Contact -->
+            <div class="container">
+                <h2>Contact</h2>
+                <p>Pour toute question ou assistance, n'hésitez pas à nous contacter.</p>
+                <!-- Ajoutez ici un formulaire de contact ou des informations de contact -->
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
