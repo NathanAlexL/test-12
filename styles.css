@@ -1,0 +1,92 @@
+/* Réinitialisation des styles par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles de base */
+body {
+    font-family: Georgia, serif;
+    background-color: #f0f4f8; /* gris bleuté */
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1c2a4e; /* bleu nuit */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Elephant', sans-serif;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #c7dceb; /* gris bleu clair */
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px; /* augmentation de la taille du padding */
+    margin-bottom: 20px; /* augmentation de l'espacement */
+    border: 2px solid #ccc; /* augmentation de l'épaisseur de la bordure */
+    border-radius: 8px; /* augmentation du rayon de bordure */
+    font-family: 'Georgia', serif;
+    font-size: 1.1rem; /* diminution de la taille de la police */
+}
+
+button {
+    padding: 12px 24px; /* augmentation de la taille du padding */
+    background-color: #2980b9; /* bleu */
+    color: #fff;
+    border: none;
+    border-radius: 8px; /* augmentation du rayon de bordure */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1c2a4e; /* bleu nuit */
+}
